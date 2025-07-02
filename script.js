@@ -119,5 +119,34 @@ const searchInput = document.getElementById('search-input');
 const nothingFound = document.getElementById('nothing-found');
 
 searchButton.addEventListener('click', () => {
+  const element = searchInput.value.trim().toLowerCase();
 
+  container.innerHTML = '';
+  nothingFound.textContent = '';
+
+  const results = items.filter(item =>
+    item.title.toLowerCase().includes(element)
+  );
+
+  if (results.length > 0) {
+    results.forEach(product => {
+      const item = template.content.cloneNode(true);
+
+            item.querySelector('h1').textContent = product.title;
+      item.querySelector('p').textContent = product.description;
+      item.querySelector('img').src = product.img;
+      item.querySelector('.price').textContent = `${product.price} BYN`;
+
+            const tagsContainer = item.querySelector('.tags');
+      product.tags.forEach(tag => {
+        const tagElement = document.createElement('span');
+        tagElement.textContent = tag;
+        tagsContainer.appendChild(tagElement);
+      });
+
+            container.appendChild(item);
+    });
+  } else {
+    nothingFound.textContent = 'Ничего не найдено 😿';
+  }
 });
