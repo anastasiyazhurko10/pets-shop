@@ -84,3 +84,5 @@ const items = [
     img: "./img/12.jpeg",
   },
 ];
+
+const template = document.getElementById('item-template');
