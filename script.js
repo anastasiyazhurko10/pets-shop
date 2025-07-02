@@ -107,6 +107,7 @@ const container = document.getElementById('shop-items');
   product.tags.forEach((tag) => {
     const tagElement = document.createElement('span');
     tagElement.textContent = tag;
+    tagElement.classList.add('tag');
     tagsContainer.appendChild(tagElement);
   });
 
