@@ -113,3 +113,8 @@ const container = document.getElementById('shop-items');
 
   container.appendChild(item);
 });
+
+const searchButton = document.getElementById('search-btn');
+const searchInput = document.getElementById('search-input');
+const nothingFound = document.getElementById('nothing-found');
+
