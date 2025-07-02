@@ -88,8 +88,7 @@ const items = [
 const template = document.getElementById('item-template');
 const container = document.getElementById('shop-items');
 
-
-items.forEach((product) => {
+  items.forEach((product) => {
   const item = template.content.cloneNode(true);
 
   const h1 = item.querySelector('h1');
@@ -110,4 +109,6 @@ items.forEach((product) => {
     tagElement.textContent = tag;
     tagsContainer.appendChild(tagElement);
   });
+
+  container.appendChild(item);
 });
