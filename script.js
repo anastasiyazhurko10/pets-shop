@@ -98,4 +98,7 @@ items.forEach((product) => {
 
   const img = item.querySelector('img');
   img.src = product.img;
+
+  const price = item.querySelector('span');
+  price.textContent = `${product.price} BYN`;
 });
