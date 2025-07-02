@@ -88,6 +88,7 @@ const items = [
 const template = document.getElementById('item-template');
 const container = document.getElementById('shop-items');
 
+
 items.forEach((product) => {
   const item = template.content.cloneNode(true);
 
@@ -100,7 +101,7 @@ items.forEach((product) => {
   const img = item.querySelector('img');
   img.src = product.img;
 
-  const price = item.querySelector('span');
+  const price = item.querySelector('.price');
   price.textContent = `${product.price} BYN`;
 
   const tagsContainer = item.querySelector('.tags');
