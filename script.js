@@ -89,3 +89,4 @@ const template = document.getElementById('item-template');
 const item = template.content.cloneNode(true);
 
 const h1 = item.querySelector('h1');
+h1.textContent = product.title;
