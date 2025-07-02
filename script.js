@@ -95,4 +95,7 @@ items.forEach((product) => {
   
   const p = item.querySelector('p');
   p.textContent = product.description;
+
+  const img = item.querySelector('img');
+  img.src = product.img;
 });
