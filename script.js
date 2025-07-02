@@ -118,3 +118,6 @@ const searchButton = document.getElementById('search-btn');
 const searchInput = document.getElementById('search-input');
 const nothingFound = document.getElementById('nothing-found');
 
+searchButton.addEventListener('click', () => {
+
+});
