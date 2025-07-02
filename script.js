@@ -86,3 +86,5 @@ const items = [
 ];
 
 const template = document.getElementById('item-template');
+
+const item = template.content.cloneNode(true);
