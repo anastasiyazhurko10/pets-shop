@@ -101,4 +101,6 @@ items.forEach((product) => {
 
   const price = item.querySelector('span');
   price.textContent = `${product.price} BYN`;
+
+  const tagsContainer = item.querySelector('.tags');
 });
