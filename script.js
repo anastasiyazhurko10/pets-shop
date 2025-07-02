@@ -105,5 +105,7 @@ items.forEach((product) => {
   const tagsContainer = item.querySelector('.tags');
   product.tags.forEach((tag) => {
     const tagElement = document.createElement('span');
+    tagElement.textContent = tag;
+    tagsContainer.appendChild(tagElement);
   });
 });
