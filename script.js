@@ -103,7 +103,7 @@ items.forEach((product) => {
   price.textContent = `${product.price} BYN`;
 
   const tagsContainer = item.querySelector('.tags');
-  product.tags.forEach((tag){
-
+  product.tags.forEach((tag) => {
+    const tagElement = document.createElement('span');
   });
 });
